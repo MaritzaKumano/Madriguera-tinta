@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" description="">
+        <title>Madriguera de tinta</title>
+        <link rel="icon" href="dist/imagenes/favicon.ico">
+        <link rel="stylesheet" href="dist/css/mi-estilo.css">
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg  navbar-contenedor-propio">
+                <div class="container">
+                    <a class="navbar-brand  color-blanco" href="#">
+                        <img src="dist/imagenes/LogoHorizontal.png" alt="Logo" height="150" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler navbar-button-blanco" type="button" data-bs-toggle="collapse" data-bs-target="#minavbar" aria-controls="minavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="minavbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                 <a class="nav-link color-blanco" href="../ProyectoCss/page/madriguera.html">Mi madriguera</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-blanco" href="#">Bazar (mercado)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-blanco" href="#">Regístrate</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--SECCION DE CARROUSEL-->
+            <section>
+                <div class="carousel slide" id="micarousel">
+                    <!--INDICADORES-->
+                    <div class="carousel-indicators">
+                       <button type="button" data-bs-target="#micarousel" data-bs-slide-to="0" class="active" aria-current="true" ></button>
+                       <button type="button" data-bs-target="#micarousel" data-bs-slide-to="1"></button>
+                       <button type="button" data-bs-target="#micarousel" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!--CONTENIDO DE CAROUSEL-->
+                    <div class="carousel-inner"> <!--Este contenedor tendá mis imágenes, por cada  inner existe un item-->
+                        <div class="carousel-item active">
+                            <img src="dist/imagenes/banner1.jpg" class="d-block w-100" alt="imagen 1">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="dist/imagenes/banner2.jpg" class="d-block w-100" alt="imagen 2">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="dist/imagenes/banner3.jpg" class="d-block w-100" alt="imagen 3">
+                        </div>
+
+                    </div>
+
+                    <!--CONTROLES-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#micarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#micarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </section>
+
+            <!-- SECCION DE BIENVENIDA -->
+            <section class="container my-5 py-4 seccion-bienvenida">
+                <div class="row align-items-center g-5">
+        
+                    <!-- CARTA A LA IZQUIERDA -->
+                    <div class="col-md-5">
+                        <div class="carta-wrapper">
+                            <div class="carta-flip">
+                            <!-- Frente -->
+                            <div class="carta-cara carta-frente">
+                                <img src="dist/imagenes/Tototo.png">
+                            </div>
+                            <!-- Dorso -->
+                            <div class="carta-cara carta-dorso">
+                                <span>¿Qué esperas?</span>
+                                <p>Ve a leer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- TEXTO A LA DERECHA -->
+                    <div class="col-md-7">    
+                        <h1 class="titulo-bienvenida">
+                            <span class="line1">Bienvenido</span><br>
+                            <span class="line2">a tu <span class="rojo">refugio</span></span><br>
+                            <span class="line3">seguro.</span>
+                        </h1>
+
+                        <p class="texto-bienvenida mt-4">
+                            Este es un rincón donde no hay prisa y puedes<br>
+                            relajarte con una taza de tu bebida favorita.<br>
+                            Aquí cada figura, manga, cómic, libro es una semilla para tu colección.<br>
+                            Pasa, ponte cómodo (a) y explora a tu ritmo.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+                
+            <!--CONTAINER-->
+            <section class="container mt-5 pt-4"><!--es un espaciado tanto a la izquierda como a la derecha-->
+                <div class="row mt-5 mb-3"><!--permite poner columnas--><!--mb es margen, 3 px-->
+                    <div class="col-12 col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="dist/imagenes/Madriguera.jpg">
+                            <div class="card-body">
+                                <h3>Observa tu colección</h3>
+                                <p>Encuentra toda tu colección aquí.</p>
+                                <div class="text-center">
+                                    <button class="btn btn-success" data-bs-toggle="" data-bs-target="#mimodal">Búsqueda</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="dist/imagenes/Bazar.jpg">
+                            <div class="card-body">
+                                <h3>¿Buscas algo?</h3>
+                                <p>Tal vez lo que buscas se encuetra en este lugar.</p>
+                                <div class="text-center">
+                                    <button class="btn btn-success">Búsqueda</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="dist/imagenes/Recomendaciones.jpg">
+                            <div class="card-body">
+                                <h3>¿Quieres una nueva aventura?</h3>
+                                <p>Aquí encontrarás recomendaciones.</p>
+                                <div class="text-center">
+                                    <button class="btn btn-success">Explora</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--SEPARACIÓN-->
+            <section>
+                <div>
+                    <h3 class="text-center">Que tu colección no pare de crecer</h3>
+                </div>
+            </section>
+
+            <!--COLAPSE ACCORDION -->
+            <section class="container mb-3">           
+                <div class="accordion" id="exampleaccordion">
+                   
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordionOne" aria-expanded="true" aria-controls="accordionOne">
+                                Cómo proteger tus libros
+                            </button>
+                        </h2>
+                        <div id="accordionOne" class="accordion-collapse collapse show" data-bs-parent="#exampleaccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>
+                                            Almacenamiento y entorno
+                                        </h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul>
+                                            <li><strong>Posición vertical: </strong>Guarda los libros de pie, asegurándote de que estén firmes pero no demasiado apretados para evitar deformaciones en el lomo o las cubiertas. Si son ejemplares muy grandes o pesados, guárdalos en posición horizontal (apilados de poco en poco).</li>
+                                            <li><strong>Alejados de la pared: </strong>No pegues la estantería directamente a la pared; deja un espacio de dos o tres dedos para permitir la ventilación y evitar problemas de humedad.</li>
+                                            <li><strong>Control de luz y calor: </strong>Evita la luz solar directa, ya que decolora las portadas y amarillea o fragiliza las páginas. Tampoco los sitúes cerca de radiadores o fuentes de calor.</li>
+                                            <li><strong>Humedad equilibrada: </strong>Un ambiente muy húmedo favorece la aparición de moho y ondulaciones en el papel, mientras que un ambiente excesivamente seco vuelve las páginas quebradizas.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12">
+                                        <h3>
+                                            Manipulación diaria
+                                        </h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul>
+                                            <li><strong>Manos limpias: </strong>Manipula siempre los libros con las manos limpias y secas para evitar transferir grasa o suciedad. Nunca te mojes el dedo con saliva para pasar las páginas.</li>
+                                            <li><strong>Usa marcapáginas: </strong>No doblar las esquinas de las hojas ni dejes el libro abierto boca abajo. Utiliza siempre un separador o marcapáginas.</li>
+                                            <li><strong>Evita forzar la apertura: </strong>No abras los libros por completo a 180 grados si la encuadernación es rígida, para proteger el lomo de roturas. Si estrenas un libro de tapa dura, ábrelo con cuidado por bloques de páginas desde el centro hacia los extremos para asentar el lomo.</li>
+                                            <li><strong>Sin comida ni bebida: </strong>Mantén los alimentos y líquidos lejos de la lectura para prevenir manchas o derrames difíciles de limpiar.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12">
+                                        <h3>
+                                            Limpieza y mantenimiento
+                                        </h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul>
+                                            <li><strong>Retiro de polvo: </strong>Limpia el polvo de las cubiertas y los cantos periódicamente (al menos una vez por semana o de forma regular) utilizando un paño de microfibra seco, una brocha suave o un pincel limpio. Evita usar plumeros tradicionales que solo levantan el polvo.</li>
+                                            <li><strong>Control de plagas: </strong>Revisa la biblioteca con frecuencia para detectar señales de insectos o humedad. Si encuentras un libro con hongos o insectos, sepáralo de inmediato del resto para evitar contagios.</li>                                    
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordionOne" aria-expanded="true" aria-controls="accordionOne">
+                                Original vs Bootleg: Cómo evitar que te estafen
+                            </button>
+                        </h2>
+                        <div id="accordionOne" class="accordion-collapse collapse show" data-bs-parent="#exampleaccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>
+                                            1. La caja te da la primera señal
+                                        </h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul>
+                                            <li><strong>Colores apagados: </strong>La caja bootleg se ve más opaca, con colores lavados. La original tiene colores vivos y nítidos.</li>
+                                            <li><strong>Tipografía borrosa: </strong>Revisa el logo de Good Smile, el texto chico de atrás. Si está pixelado o con faltas ortográficas, es bamba.</li>
+                                            <li><strong>Sello holográfico: </strong>Los Nendoroids originales traen sticker plateado/holográfico de GSC. El bootleg no trae o trae una pegatina mate mal cortada.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12">
+                                        <h3>
+                                            2. La cara y la pintura
+                                        </h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul>
+                                            <li><strong>Ojos desalineados: </strong>La original tiene los ojos perfectamente simétricos. En la bamba un ojo está más arriba que el otro.</li>
+                                            <li><strong>Pintura con manchas: </strong>Si ves manchas en el pelo, cejas mal pintadas o brillo excesivo en la cara, es copia.</li>
+                                            <li><strong>Articulaciones flojas: </strong>La original hace "click" firme al cambiar manos. La bamba se cae sola o queda muy floja.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12">
+                                        <h3>
+                                            3. Precio y lugar de compra
+                                        </h3>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul>
+                                            <li><strong>Demasiado barato: </strong>Un nendo nuevo no cuesta S/60. Si ves un Gojo o un Frieren a S/70 nuevo y sellado, duda.</li>
+                                            <li><strong>Tiendas confiables: </strong>AmiAmi, Good Smile global, tiendas de Arenales con boleta. Evita Facebook Marketplace sin fotos reales.</li>
+                                            <li><strong>Pide video: </strong>Antes de comprar de segunda, pide video de la figura moviendo las articulaciones y de la caja por dentro.</li>                                   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+        </main>      
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row align-items-center g-4">
+                    
+                    <div class="col-12 col-md-4">
+                        <div>
+                            <img src="dist/imagenes/LogoVertical.png" alt="Logo" height="175" class="d-inline-block align-text-top">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="footer-section">
+                            <h3>Páginas recomendadas</h3>
+                            <div class="d-flex gap-3 mt-3 align-items-center">
+                                <a href="https://myfigurecollection.net/" target="_blank" rel="noopener" aria-label="My Figure Collection">
+                                    <img src="dist/imagenes/MyFigureCollection.png" alt="My Figure Collection" width="80" height="80">
+                                </a>
+                                <a href="https://www.whakoom.com/" target="_blank" rel="noopener" aria-label="Whakoom">
+                                    <img src="dist/imagenes/Whakoom.png" alt="Whakoom" width="80" height="80">
+                                </a>
+                                <a href="https://www.goodreads.com/" target="_blank" rel="noopener" aria-label="Goodreads">
+                                    <img src="dist/imagenes/Goodreads.svg" alt="Goodreads" width="80" height="80">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="footer-section">
+                            <h3>Contáctanos</h3>
+                            
+                            <div class="d-flex gap-3 mt-3 align-items-center">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                                    <img src="dist/imagenes/Facebook.png" alt="Facebook" width="80" height="80">
+                                </a>
+                                <a href="https://www.tiktok.com/es/" target="_blank" rel="noopener" aria-label="TikTok">
+                                    <img src="dist/imagenes/Tik tok.png" alt="X" width="80" height="80">
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                                    <img src="dist/imagenes/instagram.png" alt="Instagram" width="80" height="80">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <a class="boton-whatsapp" href="https://wa.me/999999999" target="_blank" title="Escríbenos ">
+            <img src="dist/imagenes/Whatsapp.png" alt="imagen whatsapp">
+        </a>
+
+    </body>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+</html>

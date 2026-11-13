@@ -1,0 +1,223 @@
+.navbar-contenedor-propio
+{
+    background-color: #8FBC8F !important;
+}
+ 
+.color-blanco{
+    color:#5A3E2B !important;
+    font-size: 20px !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 65px !important;
+  height: 65px !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 60%;
+}
+
+.navbar-button-blanco{
+    background-color: white !important;
+    color:white!important;
+}
+
+.carousel-caption-titulo{
+    background-color: #0500165e !important;
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.text-center{
+    font-style: italic;
+    color:#5A3E2B!important;
+}
+
+.boton-whatsapp{
+   position:fixed;
+   right: 25px;
+   bottom: 25px;
+   width: 80px;
+   height: 80px;
+   border-radius: 18px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1040;
+   transition: transform 0.3 ease;
+   animation: WhatsappZoom 3s 0s infinite;
+}
+.boton-whatsapp img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    object-fit: contain;
+}
+
+.boton-whatsapp:hover,
+.boton-whatsapp:focus-visible{
+    transform: scale(1.2);
+}
+@keyframes WhatsappZoom
+{
+    from {  transform: scale(1);}
+    50% { transform: scale(1.2); }
+    to { transform: scale(1); }
+}
+
+.seccion-bienvenida{
+    background: #f6f5ef;
+    border-radius: 12px;
+}
+
+.carta-wrapper{
+    perspective: 700px;
+    height: 320px;
+    width: 100%;
+}
+
+.carta-flip{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s;
+    height: 100%;
+    width: 100%;
+}
+
+.carta-cara{
+    position: absolute;
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+.carta-frente{
+    background-color: transparent;
+    padding: 0;
+}
+
+.carta-frente img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carta-dorso{
+    transform: rotateY(180deg);
+    background-color: #5A3E2B; 
+}
+
+.carta-wrapper:hover .carta-flip{
+    transform: rotateY(180deg);
+}
+ 
+.footer{
+    padding-top: 30px;
+    background-color: #5A3E2B;
+    font: #F5F5F0;
+}
+
+.footer h3 {
+  color: #ffffff;
+  font-style:italic;
+}
+
+.footer-container {
+    padding: 40px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    font: #F5F5F0;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,700;9..144,1,400&family=Inter:wght@400;600&display=swap');
+
+.seccion-bienvenida{
+  background:#f6f5ef;
+}
+
+.titulo-bienvenida{
+  font-family:'Fraunces',serif; font-size:60px; line-height:0.95; margin:0;
+}
+.titulo-bienvenida .line1{ color:#5A3E2B; }
+.titulo-bienvenida .line2{ color:#3a7d44; }
+.titulo-bienvenida .rojo{ color:#d94f3d; font-style:italic; font-weight:400; }
+.titulo-bienvenida .line3{ color:#5A3E2B; }
+
+.texto-bienvenida{
+  font-family:'Inter',sans-serif; color:#5A3E2B; line-height:1.7;
+}
+
+.carta-wrapper{
+  width:100%; height:320px;
+  perspective:1000px; 
+}
+.carta-flip{
+  width:100%; height:100%;
+  position:relative;
+  transform-style:preserve-3d;
+  transition:transform 0.7s;
+}
+.carta-wrapper:hover .carta-flip{
+  transform:rotateY(180deg);
+}
+.carta-cara{
+  position:absolute; width:100%; height:100%;
+  backface-visibility:hidden;
+  border-radius:12px;
+  display:flex; flex-direction:column;
+  justify-content:center; align-items:center;
+  font-family:'Inter',sans-serif;
+  font-weight:700;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.carta-frente{
+  background:#1e3a8a; 
+  color:white;
+  font-size:24px;
+}
+.carta-dorso{
+  background:#8FBC8F;
+  color:white;
+  transform:rotateY(180deg);
+  padding:20px;
+  text-align:center;
+}
+.carta-dorso p{ font-weight:400; font-size:14px; margin-top:10px; }
+
+
+#exampleaccordion .accordion-button {
+  font-size: 1.15rem;
+  color: #5a3e2b;
+  background-color: #f6f5ef; 
+  font-weight: 600;
+}
+
+#exampleaccordion .accordion-button:not(.collapsed) {
+  color: #5a3e2b;
+  background-color: #F2C14E; 
+}
+
+#exampleaccordion .accordion-item {
+  background-color: #f6f5ef;
+  border-color: #D63A2F;
+}
+
+#exampleaccordion .accordion-body {
+  padding: 32px 28px !important;
+}
